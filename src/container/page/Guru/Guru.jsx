@@ -5,12 +5,16 @@ class Guru extends Component {
         super(props)
     }
 
+    componentDidMount() {
+        this.props.hideHeaderCard()
+    }
+
     render() {
         return (
             // <MainLayout>
             <div className="row">
                 <div className="col-xl-8">
-                   <h2>Table Guru serta CRUD</h2>
+                    <h2>Table Guru serta CRUD</h2>
                 </div>
             </div>
             // </MainLayout>

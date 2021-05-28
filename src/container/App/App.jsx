@@ -46,35 +46,35 @@ class App extends Component {
                     {/* Route pg guru */}
                     <PrivateRoute exact path="/guru" render={props => {
                         return (
-                            <MainLayout {...props} render={Guru} />
+                            <MainLayout {...props} render={Guru} noHeader={true}/>
                         )
                     }} />
 
                     {/* Route pg siswa */}
                     <PrivateRoute exact path="/siswa" render={props => {
                         return (
-                            <MainLayout {...props} render={Siswa} />
+                            <MainLayout {...props} render={Siswa} noHeader={true}/>
                         )
                     }} />
 
                     {/* Route pg mapel */}
                     <PrivateRoute exact path="/mapel" render={props => {
                         return (
-                            <MainLayout {...props} render={Mapel} />
+                            <MainLayout {...props} render={Mapel} noHeader={true}/>
                         )
                     }} />
 
                     {/* Route pg kelas */}
                     <PrivateRoute exact path="/kelas" render={props => {
                         return (
-                            <MainLayout {...props} render={Kelas} />
+                            <MainLayout {...props} render={Kelas} noHeader={true}/>
                         )
                     }} />
 
                     {/* Route pg jadwal */}
                     <PrivateRoute exact path="/jadwal" render={props => {
                         return (
-                            <MainLayout {...props} render={Jadwal} />
+                            <MainLayout {...props} render={Jadwal} noHeader={true}/>
                         )
                     }} />
 
