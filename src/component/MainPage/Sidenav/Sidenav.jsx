@@ -54,39 +54,6 @@ export default function Sidenav(props) {
                                 </Link>
                             </li>
                         </ul>
-                        {/* Divider */}
-                        <hr className="my-3" />
-                        {/* Heading */}
-                        <h6 className="navbar-heading p-0 text-muted">
-                            <span className="docs-normal">Documentation</span>
-                        </h6>
-                        {/* Navigation */}
-                        <ul className="navbar-nav mb-md-3">
-                            <li className="nav-item">
-                                <a className="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html" rel="noopener noreferrer" target="_blank">
-                                    <i className="ni ni-spaceship" />
-                                    <span className="nav-link-text">Getting started</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html" rel="noopener noreferrer" target="_blank">
-                                    <i className="ni ni-palette" />
-                                    <span className="nav-link-text">Foundation</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/components/alerts.html" rel="noopener noreferrer" target="_blank">
-                                    <i className="ni ni-ui-04" />
-                                    <span className="nav-link-text">Components</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/plugins/charts.html" rel="noopener noreferrer" target="_blank">
-                                    <i className="ni ni-chart-pie-35" />
-                                    <span className="nav-link-text">Plugins</span>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>

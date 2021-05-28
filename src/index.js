@@ -7,6 +7,7 @@ import { Provider } from 'react-redux'
 import App from './container/App/App'
 import authReducer from './redux/reducer/authReducer'
 import globalReducer from './redux/reducer/globalReducer'
+import './index.css'
 
 axios.defaults.headers.post['Accept'] = 'application/json'
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
