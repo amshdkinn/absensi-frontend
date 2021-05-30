@@ -25,7 +25,7 @@ class Mapel extends Component {
                                     <h3 className="mb-0">Table Mata Pelajaran</h3>
                                 </div>
                                 <div className="col text-right">
-                                    <Button onClick={() => { this.handleModal() }} className="btn btn-sm btn-primary">New Data</Button>
+                                    <Button onClick={() => { this.handleModal() }} className="btn btn-sm btn-primary">Data Baru</Button>
                                     <Modal show={this.state.show}>
                                         <Modal.Header>Input Data Baru</Modal.Header>
                                         <Modal.Body>

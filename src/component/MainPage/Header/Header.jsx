@@ -27,7 +27,7 @@ export default function Header({ cardHidden }) {
                                         <div className="row">
                                             <div className="col">
                                                 <h5 className="card-title text-uppercase text-muted mb-0">Jumlah Guru</h5>
-                                                <span className="h2 font-weight-bold mb-0">350,897</span>
+                                                <span className="h2 font-weight-bold mb-0">160</span>
                                             </div>
                                             <div className="col-auto">
                                                 <div className="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
@@ -35,10 +35,6 @@ export default function Header({ cardHidden }) {
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className="mt-3 mb-0 text-sm">
-                                            <span className="text-success mr-2"><i className="fa fa-arrow-up" /> 3.48%</span>
-                                            <span className="text-nowrap">Since last month</span>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +45,7 @@ export default function Header({ cardHidden }) {
                                         <div className="row">
                                             <div className="col">
                                                 <h5 className="card-title text-uppercase text-muted mb-0">Jumlah Mapel</h5>
-                                                <span className="h2 font-weight-bold mb-0">2,356</span>
+                                                <span className="h2 font-weight-bold mb-0">27</span>
                                             </div>
                                             <div className="col-auto">
                                                 <div className="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
@@ -57,10 +53,6 @@ export default function Header({ cardHidden }) {
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className="mt-3 mb-0 text-sm">
-                                            <span className="text-success mr-2"><i className="fa fa-arrow-up" /> 3.48%</span>
-                                            <span className="text-nowrap">Since last month</span>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +63,7 @@ export default function Header({ cardHidden }) {
                                         <div className="row">
                                             <div className="col">
                                                 <h5 className="card-title text-uppercase text-muted mb-0">Jumlah Kelas</h5>
-                                                <span className="h2 font-weight-bold mb-0">924</span>
+                                                <span className="h2 font-weight-bold mb-0">34</span>
                                             </div>
                                             <div className="col-auto">
                                                 <div className="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
@@ -79,10 +71,6 @@ export default function Header({ cardHidden }) {
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className="mt-3 mb-0 text-sm">
-                                            <span className="text-success mr-2"><i className="fa fa-arrow-up" /> 3.48%</span>
-                                            <span className="text-nowrap">Since last month</span>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +81,7 @@ export default function Header({ cardHidden }) {
                                         <div className="row">
                                             <div className="col">
                                                 <h5 className="card-title text-uppercase text-muted mb-0">Total Siswa</h5>
-                                                <span className="h2 font-weight-bold mb-0">49,65%</span>
+                                                <span className="h2 font-weight-bold mb-0">670</span>
                                             </div>
                                             <div className="col-auto">
                                                 <div className="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
@@ -101,10 +89,6 @@ export default function Header({ cardHidden }) {
                                                 </div>
                                             </div>
                                         </div>
-                                        <p className="mt-3 mb-0 text-sm">
-                                            <span className="text-success mr-2"><i className="fa fa-arrow-up" /> 3.48%</span>
-                                            <span className="text-nowrap">Since last month</span>
-                                        </p>
                                     </div>
                                 </div>
                             </div>

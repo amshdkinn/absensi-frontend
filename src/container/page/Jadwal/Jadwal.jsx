@@ -25,7 +25,7 @@ class Jadwal extends Component {
                                     <h3 className="mb-0">Jadwal Table</h3>
                                 </div>
                                 <div className="col text-right">
-                                <Button onClick={() => { this.handleModal() }} className="btn btn-sm btn-primary">New Data</Button>
+                                <Button onClick={() => { this.handleModal() }} className="btn btn-sm btn-primary">Data Baru</Button>
                                     <Modal show={this.state.show}>
                                         <Modal.Header>Input Data Baru</Modal.Header>
                                         <Modal.Body>
@@ -46,7 +46,7 @@ class Jadwal extends Component {
                                                     </div>
                                                 </div>
                                                 <div className="form-group row">
-                                                    <label className="col-sm-4 col-form-label">Jam Ke-</label>
+                                                    <label className="col-sm-4 col-form-label">Jam Ke</label>
                                                     <div className="col-sm-8">
                                                         <input type="text" className="form-control" placeholder="1/3/5" />
                                                     </div>

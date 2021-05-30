@@ -22,10 +22,10 @@ class Siswa extends Component {
                         <div className="card-header border-0">
                             <div className="row align-items-center">
                                 <div className="col">
-                                    <h3 className="mb-0">Student Table</h3>
+                                    <h3 className="mb-0">Tabel Siswa</h3>
                                 </div>
                                 <div className="col text-right">
-                                    <Button onClick={() => { this.handleModal() }} className="btn btn-sm btn-primary">New Date</Button>
+                                    <Button onClick={() => { this.handleModal() }} className="btn btn-sm btn-primary">Data Baru</Button>
                                     <Modal show={this.state.show}>
                                         <Modal.Header>Input Data Baru</Modal.Header>
                                         <Modal.Body>
@@ -37,31 +37,31 @@ class Siswa extends Component {
                                                     </div>
                                                 </div>
                                                 <div className="form-group row">
-                                                    <label className="col-sm-3 col-form-label">Full Name</label>
+                                                    <label className="col-sm-3 col-form-label">Nama Lengkap</label>
                                                     <div className="col-sm-9">
                                                         <input type="text" className="form-control" placeholder="Supriadi" />
                                                     </div>
                                                 </div>
                                                 <div className="form-group row">
-                                                    <label className="col-sm-3 col-form-label">Address</label>
+                                                    <label className="col-sm-3 col-form-label">Alamat</label>
                                                     <div className="col-sm-9">
-                                                        <textarea type="text" className="form-control" placeholder="1234567" />
+                                                        <textarea type="text" className="form-control" placeholder="Tejosari" />
                                                     </div>
                                                 </div>
                                                 <div className="form-group row">
                                                     <div className="col-sm-7">
-                                                        <label className="form-label">Date of Birth</label>
+                                                        <label className="form-label">Tanggal Lahir</label>
                                                         <input type="date" className="form-control" placeholder="" />
                                                     </div>
                                                     <div className="col-sm-5">
                                                         <label className="form-label">Gender</label>
-                                                        <input type="text" className="form-control" placeholder="1234567" />
+                                                        <input type="text" className="form-control" placeholder="L/P" />
                                                     </div>
                                                 </div>
                                                 <div className="form-group row">
                                                     <label className="col-sm-3 col-form-label">Whatsapp</label>
                                                     <div className="col-sm-9">
-                                                        <input type="text" className="form-control" placeholder="1234567" />
+                                                        <input type="text" className="form-control" placeholder="081353692108" />
                                                     </div>
                                                 </div>
                                             </form>
@@ -80,11 +80,11 @@ class Siswa extends Component {
                                 <thead className="thead-light">
                                     <tr>
                                         <th scope="col">NISN</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Address</th>
-                                        <th scope="col">Date Of Birth</th>
+                                        <th scope="col">Nama Lengkap</th>
+                                        <th scope="col">Alamat</th>
+                                        <th scope="col">Tanggal Lahir</th>
                                         <th scope="col">Gender</th>
-                                        <th scope="col">Whatsapp number</th>
+                                        <th scope="col">Nomor Whatsapp</th>
                                     </tr>
                                 </thead>
                                 <tbody>
