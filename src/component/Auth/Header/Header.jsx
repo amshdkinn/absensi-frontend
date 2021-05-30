@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Header({ notFound = false,forBidden = false }) {
+export default function Header({ notFound = false, forBidden = false }) {
     return (
-        <div className="header bg-gradient-primary py-7 py-lg-8 pt-lg-9">
+        <div className="header bg-gradient-primary py-7 py-lg-8 pt-lg-5">
             <div className="container">
-                <div className="header-body text-center mb-7">
+                <div className="header-body text-center mb-4">
                     <div className="row justify-content-center">
                         {!notFound
                             ? (
@@ -26,17 +26,16 @@ export default function Header({ notFound = false,forBidden = false }) {
                                 </div>
                             )
                         }
-                        {forBidden &&  (
-                                <div className="container mt-3">
-                                    <img width="500px" src="../assets/img/page/404.png" />
-                                    <div>
-                                        <h1 className="text-white">Oops, Sepertinya halaman yang anda cari tidak ditemukan</h1>
-                                        <p className="text-lead text-white">Kembali ke
+                        {forBidden && (
+                            <div className="container mt-3">
+                                <h1 className="text-white">Forbidden PAge</h1>
+                                <div>
+                                    <p className="text-lead text-white">Kembali ke
                                             <Link to="/" className="text-white font-weight-bold"> Dashboard</Link>
-                                        </p>
-                                    </div>
+                                    </p>
                                 </div>
-                            )
+                            </div>
+                        )
                         }
                     </div>
                 </div>

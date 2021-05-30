@@ -2,17 +2,16 @@ import React from 'react'
 
 export default function Header({ cardHidden }) {
     return (
-        <div className="header bg-primary pb-9">
+        <div className="header bg-primary pb-6">
             <div className="container-fluid">
                 <div className="header-body">
                     <div className="row align-items-center py-4">
                         <div className="col-lg-6 col-7">
-                            <h6 className="h2 text-white d-inline-block mb-0">Dashboard</h6>
-                            <nav aria-label="breadcrumb" className="d-none d-md-inline-block ml-md-4">
+                            <nav aria-label="breadcrumb" className="d-none d-md-inline-block ml-md-0">
                                 <ol className="breadcrumb breadcrumb-links breadcrumb-dark">
-                                    <li className="breadcrumb-item"><a href="#"><i className="fas fa-home" /></a></li>
-                                    <li className="breadcrumb-item"><a href="#">Dashboards</a></li>
-                                    <li className="breadcrumb-item active" aria-current="page">Default</li>
+                                    <li className="breadcrumb-item"><a href="/dashboard"><i className="fas fa-home" /></a></li>
+                                    <li className="breadcrumb-item"><a href="/dashboard">Dashboards</a></li>
+                                    <li className="breadcrumb-item active" aria-current="page">This Page</li>
                                 </ol>
                             </nav>
                         </div>
