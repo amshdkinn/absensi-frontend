@@ -53,6 +53,12 @@ export default function Sidenav(props) {
                                     <span className="nav-link-text">Jadwal</span>
                                 </Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to="/absensi" className="nav-link">
+                                    <i className="ni ni-calendar-grid-58 text-blue" />
+                                    <span className="nav-link-text">Absensi</span>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
