@@ -1,16 +1,34 @@
 import React, { Component } from 'react'
 import { Button, Modal } from 'react-bootstrap'
+import { API_URL } from '../../../config/config'
+import axios from 'axios'
 
 class Mapel extends Component {
     constructor(props) {
         super(props)
-        this.state = { show: false }
+        this.state = {
+            show: false,
+            mapels: [],
+            input: {}
+        }
     }
     handleModal() {
         this.setState({ show: !this.state.show })
     }
     componentDidMount() {
         this.props.hideHeaderCard()
+        axios.get(`${API_URL}/api/admin/mapel`)
+            .then(data => {
+                if (data.data.code === 200) {
+                    this.setState(prev => {
+                        return {
+                            ...prev,
+                            mapels: data.data.data
+                        }
+                    })
+                }
+                console.log(data.data.data)
+            }).catch(erro => console.log(erro))
     }
 
     render() {
@@ -58,46 +76,19 @@ class Mapel extends Component {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">
-                                            1
-              </th>
-                                        <td>Bahasa Indonesia
-              </td>
-                                        <td>
-                                            14 juni 2019
-              </td>
-                                        <td>
-                                            14 juni 2019
-              </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            2
-              </th>
-                                        <td>
-                                            Bahasa Arab
-                                        </td>
-                                        <td>
-                                            14 juni 2019
-              </td>
-                                        <td>
-                                            14 juni 2019
-              </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            3
-              </th>
-                                        <td>
-                                            Bahasa Yunani </td>
-                                        <td>
-                                            14 Juni 2019
-              </td>
-                                        <td>
-                                            14 Juni 2019
-              </td>
-                                    </tr>
+                                    {(this.state.mapels.length === 0 ?
+                                        <tr><td><h2 className="text-center">Loading</h2></td></tr>
+                                        :
+                                        this.state.mapels.map((v, i) => {
+                                            { console.log("v", v) }
+                                            <tr key={i}>
+                                                <td>{v.id}</td>
+                                                <td>{v.name}</td>
+                                                <td>{v.created_at}</td>
+                                                <td>{v.updated_at}</td>
+                                            </tr>
+                                        })
+                                    )}
                                 </tbody>
                             </table>
                         </div>

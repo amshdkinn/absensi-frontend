@@ -80,15 +80,15 @@ class Login extends Component {
         const { from } = this.props.location.state || { from: { pathname: '/' } }
 
         this.setState(prevState => ({ ...prevState, toggleBlocking: true }))
-        axios.post(`${API_URL}/api/login`, {
+        axios.post(`${API_URL}/api/admin/login`, {
             username: this.state.username,
             password: this.state.password
         }, {
-            header: {
-                // "Content-Type": "application/json",
-                // setTimeout: 10000,
-                'X-Requested-With': 'XMLHttpRequest',
-            }
+            // header: {
+            //     // "Content-Type": "application/json",
+            //     // setTimeout: 10000,
+            //     'X-Requested-With': 'XMLHttpRequest',
+            // }
         }).then(({ data }) => {
             if (data.code === 200) {
                 localStorage.setItem('token', data.data.token)
