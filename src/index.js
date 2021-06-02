@@ -11,7 +11,7 @@ import './index.css'
 
 axios.defaults.headers.post['Accept'] = 'application/json'
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
-
+axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}` || '';
 //Reducer 
 const rootReducer = combineReducers({ auth: authReducer, global: globalReducer })
 //Store
